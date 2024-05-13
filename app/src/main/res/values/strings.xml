@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">SignUp_Login_Portal</string>
+    <string name="page1_title">SignUp</string>
+    <string name="val1">E-Mail</string>
+    <string name="val2">Password</string>
+    <string name="page2_title">Log In</string>
+<!--    <string name="usersEmail">"@{viewModel.email}"</string>-->
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670496053183",
+    "project_id": "loginsignupportal",
+    "storage_bucket": "loginsignupportal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670496053183:android:9fa8e681c08260a2dab30a",
+        "android_client_info": {
+          "package_name": "com.tejas.signup_login_portal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVp9E2p4ChGYpaFBd94Ps15zAevn0OWBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
