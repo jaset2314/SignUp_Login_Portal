@@ -1,23 +1,26 @@
 package com.tejas.signup_login_portal
 
+//import com.google.firebase.auth.FirebaseAuth
+//import android.content.Intent
+//import android.os.Bundle
+//import androidx.appcompat.app.AppCompatActivity
+
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.google.firebase.auth.FirebaseAuth
-
-import com.google.firebase.auth.auth
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.tejas.signup_login_portal.databinding.ActivityLogInBinding
-import com.tejas.signup_login_portal.Portal_SignedIn
 
 class LogInActivity : AppCompatActivity() {
 
     private lateinit var bindinglogin: ActivityLogInBinding
+    private lateinit var googleSignInClient: GoogleSignInClient
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +39,7 @@ class LogInActivity : AppCompatActivity() {
 
                     val user = Firebase.auth.currentUser
 //                    updateUI(user)
-                    val intent = Intent(this, Portal_SignedIn::class.java)
+                    val intent = Intent(this, WelcomeForm::class.java)
                     startActivity(intent)
                 }else if(it.isCanceled){
                     Toast.makeText(this, "Failure", Toast.LENGTH_LONG).show()
